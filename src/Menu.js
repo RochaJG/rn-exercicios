@@ -5,9 +5,13 @@ import Simples from "./components/Simples";
 import Plataformas from "./components/Plataformas";
 import ValidarProps from "./components/ValidarProps";
 import Evento from "./components/Evento";
+import Avo from "./components/ComunicacaoDireta";
 
 export default createDrawerNavigator(
   {
+    Avo: {
+      screen: () => <Avo nome="João" sobrenome="Silva" />
+    },
     Evento: {
       screen: Evento
     },
