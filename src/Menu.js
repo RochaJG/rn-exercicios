@@ -7,9 +7,14 @@ import ValidarProps from "./components/ValidarProps";
 import Evento from "./components/Evento";
 import Avo from "./components/ComunicacaoDireta";
 import TextoSincronizado from "./components/ComunicacaoIndireta";
+import ListaFlex from "./components/ListaFlex";
 
 export default createDrawerNavigator(
   {
+    ListaFlex: {
+      screen: ListaFlex,
+      navigationOptions: { title: "Lista (FlexBox)" }
+    },
     TextoSincronizado: {
       screen: TextoSincronizado,
       navigationOptions: { title: "Texto Sincronizado" }
